@@ -6,4 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Kentico.Kontent.Delivery" Version="15.0.1" />
+    <PackageReference Include="Kentico.Kontent.Delivery.Abstractions" Version="15.0.1" />
+  </ItemGroup>
+
 </Project>
