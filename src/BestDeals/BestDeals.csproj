@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="Views\Deals\Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Kentico.Kontent.Delivery" Version="15.0.1" />
     <PackageReference Include="Kentico.Kontent.Delivery.Abstractions" Version="15.0.1" />
   </ItemGroup>
