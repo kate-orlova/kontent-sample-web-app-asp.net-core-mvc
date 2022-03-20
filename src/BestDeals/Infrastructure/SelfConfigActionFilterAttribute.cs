@@ -16,5 +16,15 @@ namespace BestDeals.Infrastructure
             AppConfig = appConfig;
             DeliveryOptions = deliveryOptions;
         }
+
+        public override void OnActionExecuting(ActionExecutingContext filterContext)
+        {
+            base.OnActionExecuting(filterContext);
+
+            if (string.IsNullOrEmpty(DeliveryOptions.Value.ProjectId))
+            {
+                filterContext.Result = Helpers.RedirectHelper.GetSelfConfigIndexResult(null);
+            }
+        }
     }
 }
