@@ -5,14 +5,14 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
-
   <ItemGroup>
-    <None Include="Views\Deals\Index.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <PackageReference Include="AspNetCore.Mvc.Routing.Localization" Version="1.2.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.2.0" />
     <PackageReference Include="Kentico.Kontent.Delivery" Version="15.0.1" />
     <PackageReference Include="Kentico.Kontent.Delivery.Abstractions" Version="15.0.1" />
+    <PackageReference Include="Kentico.Kontent.Delivery.Extensions.DependencyInjection" Version="15.0.0" />
+    <PackageReference Include="Kentico.Kontent.Management" Version="2.1.0" />
+    <PackageReference Include="Kentico.Kontent.Management.Helpers" Version="2.1.0" />
   </ItemGroup>
 
 </Project>
