@@ -1,6 +1,15 @@
-﻿@{
+﻿@model BestDeals.Models.ViewModels.DealsViewModel
+
+@{
     ViewData["Title"] = "Deals";
 }
 <h1>@ViewData["Title"]</h1>
 
-<p>Deals TBC</p>
+<p>Best deals for you today</p>
+<div>
+    @foreach (var deal in Model.Items)
+    {
+        <h3>@Html.DisplayFor(vm => deal.DealSystemAttributes.Name)</h3>
+        <p>@Html.DisplayFor(vm => deal.Id)</p>
+    }
+</div>
