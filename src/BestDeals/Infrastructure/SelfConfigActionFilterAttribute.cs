@@ -20,11 +20,6 @@ namespace BestDeals.Infrastructure
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
             base.OnActionExecuting(filterContext);
-
-            if (string.IsNullOrEmpty(DeliveryOptions.Value.ProjectId))
-            {
-                filterContext.Result = Helpers.RedirectHelper.GetSelfConfigIndexResult(null);
-            }
         }
     }
 }
